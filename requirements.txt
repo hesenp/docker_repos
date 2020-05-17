@@ -1,0 +1,14 @@
+numpy
+scipy
+torch
+seaborn
+jupyter
+pandas
+torch
+torchvision
+requests
+pandas_market_calendars
+SQLAlchemy
+ipython-sql
+coloredlogs
+psycopg2-binary
