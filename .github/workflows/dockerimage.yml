@@ -23,4 +23,4 @@ jobs:
           password: ${{ secrets.dockerhub_token }}
           # Docker repository to tag the image with
           repository: simple_jupyter_notebook
-          path: ./
+          push: true
