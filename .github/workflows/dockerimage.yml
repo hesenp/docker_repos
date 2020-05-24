@@ -19,6 +19,6 @@ jobs:
         # Username used to log in to a Docker registry. If not set then no login will occur
         username: smilywhale
         # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
-        password: $(secret.dockerhub_token)
+        password: ${{ secrets.dockerhub_token }}
         # Docker repository to tag the image with
         repository: simple_jupyter_notebook
