@@ -22,6 +22,6 @@ jobs:
           # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
           password: ${{ secrets.dockerhub_token }}
           # Docker repository to tag the image with
-          repository: simple_jupyter_notebook
+          repository: smilywhale/simple_jupyter_notebook
           tags: latest
           push: true
