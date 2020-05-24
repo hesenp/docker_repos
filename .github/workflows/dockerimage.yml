@@ -24,3 +24,4 @@ jobs:
           # Docker repository to tag the image with
           repository: simple_jupyter_notebook
           push: true
+          tags: smilywhale/simple_jupyter_notebook
