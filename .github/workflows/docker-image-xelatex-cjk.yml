@@ -1,0 +1,32 @@
+name: Docker Image XeLaTeX CI
+
+on:
+  push:
+    branches: [ master ]
+    paths: 
+      - 'xelatex_chinese/*'
+  pull_request:
+    branches: [ master ]
+    paths: 
+      - 'xelatex_chinese/*'
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v1.1.0
+        with:
+          path: xelatex_chinese/
+          # Username used to log in to a Docker registry. If not set then no login will occur
+          username: smilywhale
+          # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
+          password: ${{ secrets.dockerhub_token }}
+          # Docker repository to tag the image with
+          repository: smilywhale/xelatex-cjk
+          tags: latest
+          push: true
