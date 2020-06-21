@@ -12,3 +12,4 @@ SQLAlchemy
 ipython-sql
 coloredlogs
 psycopg2-binary
+tqdm
