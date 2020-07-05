@@ -41,6 +41,9 @@ RUN sed -i 's/^#force_color_prompt=yes/force_color_prompt=yes/' /etc/skel/.bashr
 
 USER ${NB_USER}
 
+# Get better looking CSS font for Jupyter notebook
+COPY custom.css ~/.jupyter/custom/
+
 WORKDIR /code
 
 # Run your program under Tini
