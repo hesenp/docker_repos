@@ -39,10 +39,10 @@ RUN sed -i 's/^#force_color_prompt=yes/force_color_prompt=yes/' /etc/skel/.bashr
    fix-permissions /home/${NB_USER} && \
    fix-permissions /code
 
-USER ${NB_USER}
+# Jupyter notebook fonts
+COPY custom.css /home/user_1/.jupyter/custom/
 
-# Get better looking CSS font for Jupyter notebook
-COPY custom.css ~/.jupyter/custom/
+USER ${NB_USER}
 
 WORKDIR /code
 
