@@ -1,0 +1,17 @@
+numpy
+scipy
+requests
+pandas
+pandas_market_calendars
+
+torch
+torchvision
+
+seaborn
+plotly 
+
+SQLAlchemy
+ipython-sql
+psycopg2-binary
+
+tqdm
